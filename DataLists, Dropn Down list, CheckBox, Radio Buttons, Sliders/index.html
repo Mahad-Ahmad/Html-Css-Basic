@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <style>
+      body {
+        margin: 2rem;
+      }
+      form {
+        width: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" list="list" autocomplete="off" />
+      <datalist id="list">
+        <option value=""></option>
+        <option data-value="1">Maths</option>
+        <option data-value="2">Chemistry</option>
+        <option data-value="3">Biology</option>
+      </datalist>
+    </form>
+    <form>
+      <select>
+        <optgroup label="Front-end">
+          <!-- <option value=""></option> used for select a course-->
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">jS</option>
+        </optgroup>
+        <optgroup label="Back-end">
+          <option value="1">node.js</option>
+          <option value="2">React</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
+    </form>
+    <form action="">
+      <div>
+        <input type="checkbox" name="" id="front-end" checked />
+        <label for="front-end" class="label-inline">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" name="" id="back-end" />
+        <label for="back-end" class="label-inline">Back-end</label>
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <input type="radio" name="Gift" id="watch" disabled />
+        <label for="watch" class="label-inline">Watch</label>
+      </div>
+      <div>
+        <input type="radio" name="Gift" id="wallet" />
+        <label for="wallet" class="label-inline">Wallet</label>
+      </div>
+    </form>
+
+    <form action="">
+      <input type="range" name="" id="" min="0" max="100" value="70" />
+    </form>
+  </body>
+</html>

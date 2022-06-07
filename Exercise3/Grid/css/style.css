@@ -1,0 +1,57 @@
+@media screen and (max-width: 786px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat(9, 110px);
+    grid-template-columns: repeat(1, 110px);
+    padding: 10px;
+    row-gap: 3px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 786px) and (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat(6, 150px);
+    grid-template-columns: repeat(2, 200px);
+    padding: 10px;
+    gap: 5px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(3, 200px);
+    padding: 10px;
+    grid-template-areas:
+      "header header1 header1"
+      "Main header1 header1"
+      "Data heade heade"
+      "footer footer footer";
+    gap: 5px;
+  }
+  .box2 {
+    grid-area: 1/2/-3/4;
+    /* Calling that larger box how much it expands in rows im just telling the direction by that no */
+  }
+  /* .box2 {
+    grid-area: header1;
+  } */
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+  }
+}

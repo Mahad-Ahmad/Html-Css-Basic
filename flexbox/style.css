@@ -1,0 +1,46 @@
+body {
+  margin: 10px;
+}
+.boxes {
+  border: 2px solid aqua;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100vh;
+}
+/* flex-wrap : wrap;
+if there are many boxes they stretched so it will make them normal
+align-content : centre;
+it will align the whole contnet into centre*/
+.box {
+  /* flex-basis: 150px; */
+  /*default value is auto it will overwrite the width property cause of direction row  */
+  /* flex-grow: 1; */
+  /* growth factor of the flex item by default 0*/
+  /* flex-shrink: 1; */
+  /* it depends on shirnking the box for smaller 
+  screen by rate of 1 opposite of flex-grow*/
+  /* flex: 1 1 5rem; */
+  /* grow shrink basis */
+  height: 100px;
+  width: 100px;
+  margin: 1rem;
+}
+.box-one {
+  background-color: aquamarine;
+  align-self: flex-end;
+  /* it will overwrite the align-item property */
+  flex-basis: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.box-two {
+  background-color: blueviolet;
+}
+.box-three {
+  background-color: darkcyan;
+}
+.box-four {
+  background-color: darkgrey;
+}

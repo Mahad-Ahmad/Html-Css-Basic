@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes pop {
+  0% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+}
+
+/* Reuseable animation means we cant design all elements
+we just have to create animation and then apply this class
+to those elements that we want to animate */
+.reuseable-pop {
+  animation: pop 4s linear 2s 3;
+}

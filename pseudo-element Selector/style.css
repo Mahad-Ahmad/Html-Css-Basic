@@ -1,0 +1,24 @@
+body {
+  padding: 10px;
+}
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+p::first-line {
+  font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+  background-color: aquamarine;
+}
+/*used for selected items  */
+p::after {
+  content: "Thank You";
+  display: block;
+}
+/* after every paragraph */
+p::before {
+  content: "...";
+  display: block;
+}
+/* before every paragraphs */

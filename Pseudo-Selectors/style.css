@@ -1,0 +1,33 @@
+body {
+  margin: 10px;
+}
+/* article :first-child { */
+/* font-style: italic; */
+/* } */
+/* article :first-of-type { */
+/* font-style: italic; */
+/* } */
+/* applied to the fisrt occurance of elements of diff types*/
+
+article p:first-of-type {
+  font-style: italic;
+}
+/* } */
+/* applied to the fisrt occurance of paragraphs only*/
+/* article :last-child */
+/* article :last-of-type */
+/* article :nth-child(odd) */
+/* article :nth-child(even) */
+
+ul li:nth-child(odd) {
+  color: lightcoral;
+}
+/* 3n every 3rd itme in our list*/
+a:visited,
+a:link {
+  color: brown;
+}
+a:hover,
+a:focus {
+  color: slategray;
+}

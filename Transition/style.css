@@ -1,0 +1,21 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  background-color: gold;
+  transition: transform 0.5s ease-in 1s, background-color 0.5s;
+}
+.container {
+  perspective: 200px;
+}
+.container:hover .box-one {
+  transform: rotate(35deg);
+  transform-origin: 0 60%;
+  background-color: burlywood;
+}

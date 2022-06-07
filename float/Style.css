@@ -1,0 +1,30 @@
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: gold;
+  float: left;
+  margin-right: 1rem;
+}
+.p2 {
+  clear: both;
+}
+.tweet {
+  border: 3px solid gray;
+  /* overflow: hidden; */
+}
+/* .clearfix::after { */
+/* content: ""; */
+/* display: block; */
+/* clear: both; */
+/* } */
+/* } */
+/* .tweet::after { */
+/* content: ""; */
+/* display: block; */
+/* clear: both; */
+/* } */
+/* we use pseudo class to create a div using css */
+/* another way to solve this problem of collapsing is 
+to create a clearfix class with pseudo element and give
+ to every element with float  */
+/* we can also solve this by using overflow property */

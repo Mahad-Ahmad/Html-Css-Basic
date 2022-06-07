@@ -1,0 +1,33 @@
+.container {
+  border: 1px solid black;
+  position: relative;
+  margin: 10px;
+}
+.box {
+  height: 5rem;
+  width: 5rem;
+}
+/* .box-two { */
+/* background-color: bisque; */
+/* position: relative; */
+/* left: 3rem; */
+/* top: 3rem; */
+/* z-index: -2; */
+/* } */
+.box-one {
+  background-color: tomato;
+}
+.box-three {
+  background-color: turquoise;
+}
+.box-two {
+  background-color: bisque;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.box-four {
+  background-color: cadetblue;
+  position: fixed;
+  top: 0;
+}

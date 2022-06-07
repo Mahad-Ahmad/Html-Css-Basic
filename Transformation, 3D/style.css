@@ -1,0 +1,28 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  background-color: gold;
+}
+.container {
+  perspective: 200px;
+}
+.container:hover .box-one {
+  transform: rotate(35deg);
+  transform-origin: 0 60%;
+}
+
+.container:hover .box-two {
+  transform: rotateY(20deg);
+}
+
+/* by setting perspective property we set that the origin of move
+the bosex is same otherwise the rotate differently and in second
+style we are saying that the .box child of container is move when
+we hover in it */

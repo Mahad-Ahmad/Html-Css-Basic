@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+/* BACKGROUND IMAGES  */
+body {
+  background: url(bg-sanfrancisco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CSS SPRITE  */
+.bg-dishes {
+  background: url("../images/css-sprite-combined.png") -0px -100px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.bg-saturn {
+  background: url("../images/css-sprite-combined.png") -0px 0px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-landing {
+  background: url("../images/css-sprite-combined.png") -0px -200px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.bg-rocketship {
+  background: url("../images/css-sprite-combined.png") -0px -300px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+/* CLIPPING  */
+.meal {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+/* Filter */
+/* img:hover { */
+/* filter: grayscale(70%) blur(1px); */
+/* } */
